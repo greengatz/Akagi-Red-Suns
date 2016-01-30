@@ -4,19 +4,18 @@ using UnityEngine.SceneManagement;
 
 public class RoomChanger : MonoBehaviour {
 
-	public float doorRange = 1.5f;
 	public string transition = "next scene";
 
 	// Use this for initialization
 	void Start () {
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
 
-		Collider2D[] nearDest = Physics2D.OverlapCircleAll(GetComponent<Transform>().position, doorRange);
+		Collider2D[] nearDest = Physics2D.OverlapCircleAll(GetComponent<Transform>().position, GlobalState.doorRange);
 		for (int i = 0; i < nearDest.Length; i++)
 		{
 			Collider2D near = nearDest [i];

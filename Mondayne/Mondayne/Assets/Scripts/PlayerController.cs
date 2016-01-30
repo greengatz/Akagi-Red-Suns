@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 0.01f;
     private Rigidbody2D rb2d;
     public float interactRange = 1.0f;
     public Animator animator;
@@ -23,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 		movement.Normalize ();
-		rb2d.MovePosition(rb2d.position + movement * Time.fixedDeltaTime * speed);
+		rb2d.MovePosition(rb2d.position + movement * Time.fixedDeltaTime * GlobalState.speed);
 
 
         if (moveHorizontal != 0)
