@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    public float interactRange = 1.0f;
+    public float interactRange = 0.1f;
     public Animator animator;
 
     // Use this for initialization
