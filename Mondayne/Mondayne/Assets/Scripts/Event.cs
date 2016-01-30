@@ -72,10 +72,15 @@ public class Event : MonoBehaviour {
             
         }
 
+		GlobalState.characterActing = true;
+		GlobalState.characterVis = !hideGuy;
+
         Debug.Log ("starting wait");
 		yield return new WaitForSeconds(useTime);
 		Debug.Log ("ending wait");
 
+		GlobalState.characterActing = false;
+		GlobalState.characterVis = true;
 		// wait for time amount       
 		// play Loop sound
 		// kill animation or whatever

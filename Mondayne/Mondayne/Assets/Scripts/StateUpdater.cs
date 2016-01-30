@@ -5,9 +5,24 @@ using System.Collections.Generic;
 public class StateUpdater : MonoBehaviour {
 	private static string unknownTask = "Hmm, I wonder what you should do next";
 
+	public AudioSource music1 = null;
+	public AudioSource music2 = null;
+	public int switchMusicOn = 1;
+
 	// Use this for initialization
 	void Start () {
+		GlobalState.switchMusic = switchMusicOn;
+
 		//GlobalState.testMethod ();
+		if (GlobalState.music1 == null && music1 != null) {
+			GlobalState.music1 = music1;
+			GlobalState.music1.Play ();
+			DontDestroyOnLoad (GlobalState.music1);
+		}
+		if (GlobalState.music2 == null && music2 != null) {
+			GlobalState.music2 = music2;
+			DontDestroyOnLoad (GlobalState.music2);
+		}
 	}
 	
 	// Update is called once per frame

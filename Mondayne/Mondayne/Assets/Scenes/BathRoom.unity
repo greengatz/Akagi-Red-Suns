@@ -639,7 +639,8 @@ MonoBehaviour:
   eventID: 1
   useTime: 0
   hideGuy: 0
-  eventAudio: {fileID: 0}
+  eventAudio:
+  - {fileID: 0}
 --- !u!61 &931231354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -806,8 +807,9 @@ MonoBehaviour:
   descriptor: You should take a shower
   eventID: 2
   useTime: 2
-  hideGuy: 0
-  eventAudio: {fileID: 0}
+  hideGuy: 1
+  eventAudio:
+  - {fileID: 0}
 --- !u!61 &1011084540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1124,7 +1126,8 @@ MonoBehaviour:
   eventID: 3
   useTime: 0
   hideGuy: 0
-  eventAudio: {fileID: 0}
+  eventAudio:
+  - {fileID: 0}
 --- !u!61 &1913485864
 BoxCollider2D:
   m_ObjectHideFlags: 0

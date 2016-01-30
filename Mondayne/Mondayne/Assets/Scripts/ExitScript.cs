@@ -29,6 +29,12 @@ public class ExitScript : MonoBehaviour {
 				Debug.Log("Resetting Day");
 
 				GlobalState.current = 0;
+				GlobalState.run++;
+
+				if(GlobalState.run == GlobalState.switchMusic) {
+					GlobalState.music1.Stop ();
+					GlobalState.music2.Play ();
+				}
 
 				SceneManager.LoadScene (transition);
 			}

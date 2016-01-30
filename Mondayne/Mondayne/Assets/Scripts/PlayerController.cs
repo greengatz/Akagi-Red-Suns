@@ -17,13 +17,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+		gameObject.GetComponent<SpriteRenderer> ().enabled = GlobalState.characterVis;
+
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 		movement.Normalize ();
-		rb2d.MovePosition(rb2d.position + movement * Time.fixedDeltaTime * GlobalState.speed);
 
+		if (!GlobalState.characterActing) {
+			rb2d.MovePosition (rb2d.position + movement * Time.fixedDeltaTime * GlobalState.speed);
+		}
 
         if (moveHorizontal != 0)
         {
@@ -41,8 +45,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
-
-        //Debug.Log(moveVertical + " " + moveHorizontal);
 
 
         // check for nearby objects
