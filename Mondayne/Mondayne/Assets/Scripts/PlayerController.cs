@@ -52,18 +52,19 @@ public class PlayerController : MonoBehaviour
         {
 			bool select = Input.GetButtonDown("Jump");
 			Collider2D near = nearDest [i];
+
 			if (select && !gameObject.Equals(near.gameObject) && 
 					near.gameObject.CompareTag("Event"))
 			{
-				if (!gameObject.Equals(nearDest[i].gameObject))
-            	{
+				//if (!gameObject.Equals(nearDest[i].gameObject))
+            	//{
                 
 					//Debug.Log ("near object " + nearDest [i].gameObject.name);
 
                     //Debug.Log ("using object " + nearDest [i].gameObject.name);
                     //nearDest [i].gameObject.name;
                     nearDest[i].gameObject.SendMessage("selected");
-                }
+                //}
             }
             else {
                 //Debug.Log ("forever alone");
