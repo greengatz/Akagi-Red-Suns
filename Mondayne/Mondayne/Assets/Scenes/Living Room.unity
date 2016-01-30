@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d0fe4eb70f3634db2fa2445c3d7ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorRange: 0.3
   transition: Kitchen
 --- !u!61 &24420188
 BoxCollider2D:
@@ -212,15 +211,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474640, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
       propertyPath: m_Offset.x
-      value: -0.012089968
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
       propertyPath: m_Offset.y
-      value: -0.15750694
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
       propertyPath: m_Size.x
@@ -474,7 +473,8 @@ MonoBehaviour:
   eventID: 4
   useTime: 0
   hideGuy: 0
-  eventAudio: {fileID: 0}
+  eventAudio:
+  - {fileID: 0}
 --- !u!61 &489462642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -562,7 +562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d0fe4eb70f3634db2fa2445c3d7ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorRange: 0.3
   transition: BathRoom
 --- !u!61 &672738843
 BoxCollider2D:
@@ -882,6 +881,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78fe48e765db9ae4a96bbf16533f1b64, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1365248699 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 155764, guid: 5d1bcf4047b8ee341b545d78d255a88c, type: 2}
+  m_PrefabInternal: {fileID: 2132909714}
+--- !u!60 &1365248700
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365248699}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.03125, y: 0.578125}
+      - {x: -0.34375, y: 0.39847684}
+      - {x: -0.42814064, y: 0.328125}
+      - {x: -0.46407032, y: -0.03751576}
+      - {x: -0.03125, y: -0.578125}
+      - {x: 0.11564064, y: -0.54219556}
+      - {x: 0.42814064, y: -0.30155456}
+      - {x: 0.32035208, y: 0.03283608}
+      - {x: -0.015546083, y: 0.39998424}
 --- !u!1 &1726237688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1292,10 @@ Prefab:
     - target: {fileID: 6169014, guid: 5d1bcf4047b8ee341b545d78d255a88c, type: 2}
       propertyPath: m_Size.y
       value: 1.007309
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169014, guid: 5d1bcf4047b8ee341b545d78d255a88c, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d1bcf4047b8ee341b545d78d255a88c, type: 2}

@@ -602,8 +602,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 931231352}
   - 212: {fileID: 931231355}
-  - 61: {fileID: 931231354}
   - 114: {fileID: 931231353}
+  - 60: {fileID: 931231354}
   m_Layer: 0
   m_Name: Toilet
   m_TagString: Event
@@ -641,11 +641,10 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio:
   - {fileID: 0}
---- !u!61 &931231354
-BoxCollider2D:
+--- !u!60 &931231354
+PolygonCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6131584, guid: 6b737676dfc8bd145b937c0623df5bf3,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931231351}
   m_Enabled: 1
@@ -653,9 +652,15 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.009878516, y: 0.022780895}
-  serializedVersion: 2
-  m_Size: {x: 0.32608798, y: 0.39972633}
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.08060455, y: 0.26469535}
+      - {x: 0.07758331, y: 0.08866292}
+      - {x: -0.34343982, y: 0.06126052}
+      - {x: -0.18852639, y: -0.20539051}
+      - {x: 0.31732178, y: -0.22132486}
+      - {x: 0.359375, y: 0.2806303}
 --- !u!212 &931231355
 SpriteRenderer:
   m_ObjectHideFlags: 0
