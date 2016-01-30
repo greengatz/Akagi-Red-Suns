@@ -10,7 +10,7 @@ public class Event : MonoBehaviour {
 	private bool completed = false;
 
 	// Use this for initialization
-	public void Init () {
+	public void Start () {
 		GlobalState.events.Add (eventID, this);
 	}
 
@@ -29,5 +29,11 @@ public class Event : MonoBehaviour {
 	public void finishEvent() {
 		running = false;
 		completed = true;
+	}
+
+	void selected() {
+		if(isRunning()) {
+			finishEvent ();
+		}
 	}
 }
