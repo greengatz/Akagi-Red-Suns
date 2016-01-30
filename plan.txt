@@ -1,0 +1,15 @@
+Character
+-moves
+-interacts
+
+Daily Routine
+-turn off alarm
+-use bathroom
+-take shower
+-shave
+-feed dog
+-fry eggs
+-toast bread
+-brew coffee
+-get keys
+-leave
