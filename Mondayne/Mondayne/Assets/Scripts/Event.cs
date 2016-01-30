@@ -5,11 +5,11 @@ public class Event : MonoBehaviour {
 
 	public string descriptor = "event descriptor";
 	public int eventID;
-	public float useTime = 0.0f;
+	public float useTime = 1f;
 	public bool hideGuy = false;
-    public AudioSource eventAudio = null;
+    public AudioSource[] eventAudio = null;
 
-	private bool running = false;
+    private bool running = false;
 	private bool completed = false;
 
 	// Use this for initialization
@@ -23,7 +23,9 @@ public class Event : MonoBehaviour {
 		if (GlobalState.current > eventID) {
 			completed = true;
 		}
-	}
+
+        eventAudio = GetComponents<AudioSource>();
+    }
 
 	public void startEvent() {
 		running = true;
@@ -52,20 +54,29 @@ public class Event : MonoBehaviour {
 	}
 
 	IEnumerator waitSelected() {
-		// get the guy, hide him if we should
+        // get the guy, hide him if we should
 
-		// get the guy, hide him if we should
-		// start animation or whatever
-		// play start sound
+        // get the guy, hide him if we should
+        // start animation or whatever
+        // play start sound
 
-		// start animation or whatever
-		// play start sound
-		// wait for time amount
-		Debug.Log ("starting wait");
+        // start animation or whatever
+        // play start sound
+        // wait for time amount
+
+        if (eventAudio != null)
+        {
+         
+                eventAudio[0].Play();
+                eventAudio[1].Play();
+            
+        }
+
+        Debug.Log ("starting wait");
 		yield return new WaitForSeconds(useTime);
 		Debug.Log ("ending wait");
 
-		// wait for time amount
+		// wait for time amount       
 		// play Loop sound
 		// kill animation or whatever
 		// stop loop sound
