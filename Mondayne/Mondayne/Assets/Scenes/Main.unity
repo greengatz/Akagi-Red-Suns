@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorRange: 0.1
-  transition: Living Room
+  transition: BathRoom
 --- !u!1 &1045830220
 GameObject:
   m_ObjectHideFlags: 0
