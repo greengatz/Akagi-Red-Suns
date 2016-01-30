@@ -64,7 +64,7 @@ public class Event : MonoBehaviour {
         // play start sound
         // wait for time amount
 
-        if (eventAudio != null)
+		if (eventAudio != null && eventAudio.Length >= 2)
         {
          
                 eventAudio[0].Play();
