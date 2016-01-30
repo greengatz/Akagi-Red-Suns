@@ -23,8 +23,8 @@ public class RoomChanger : MonoBehaviour {
 
 			if (!gameObject.Equals(near.gameObject) && near.gameObject.CompareTag("Player"))
 			{
-				//nearDest[i].gameObject.SendMessage("selected");
-				//Debug.Log("changing scene to " + transition);
+				nearDest[i].gameObject.SendMessage("selected");
+				Debug.Log("changing scene to " + transition);
 				//SceneManager.GetSceneByName (transition);
 				//SceneManager.SetActiveScene (SceneManager.GetSceneByName (transition));
 				SceneManager.LoadScene (transition);
