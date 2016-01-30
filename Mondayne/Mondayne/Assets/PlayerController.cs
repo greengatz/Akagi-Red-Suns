@@ -26,9 +26,14 @@ public class PlayerController : MonoBehaviour {
 		Collider2D[] nearDest = Physics2D.OverlapCircleAll (GetComponent<Transform>().position, interactRange);
 		for(int i = 0; i < nearDest.Length; i++) {
 			if (!gameObject.Equals (nearDest [i].gameObject)) {
-				Debug.Log ("near another object");
+				bool select = Input.GetButtonDown ("Jump");
+				if (select) {
+					//Debug.Log ("using object " + nearDest [i].gameObject.name);
+					//nearDest [i].gameObject.name;
+					nearDest[i].gameObject.SendMessage("selected");
+				}
 			} else {
-				Debug.Log ("forever alone");
+				//Debug.Log ("forever alone");
 			}
 		}
 	}
