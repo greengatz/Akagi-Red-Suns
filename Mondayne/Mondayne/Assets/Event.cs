@@ -7,7 +7,7 @@ public class Event : MonoBehaviour {
 	public GameObject interactable = null;
 
 
-	private boolean isActive = false;
+	private bool isActive = false;
 
 
 	// Use this for initialization
@@ -19,6 +19,5 @@ public class Event : MonoBehaviour {
 	void Update () {
 	
 	}
-
-	void 
+		
 }

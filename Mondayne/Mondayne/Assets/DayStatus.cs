@@ -16,9 +16,11 @@ public class DayStatus : MonoBehaviour {
 		GameObject[] arrayForm = toDo.ToArray ();
 		if(arrayForm.Length > 0) {
 			GameObject eve = arrayForm[0];
+			/*
 			if(eve.SendMessage("")) {
 				//asdf
 			}
+			*/
 		}
 	}
 }
