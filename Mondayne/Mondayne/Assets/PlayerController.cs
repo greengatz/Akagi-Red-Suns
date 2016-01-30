@@ -18,13 +18,7 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxisRaw ("Vertical");
 
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
-<<<<<<< HEAD
 		rb2d.MovePosition (rb2d.position + movement * Time.fixedDeltaTime * speed);
-=======
-		movement *= speed;
-		rb2d.MovePosition (rb2d.position + movement);
->>>>>>> 5a368a58ce252e6ba8ab9720fb45e0b7f13a6f8b
-
 
 		// check for nearby objects
 		Collider2D[] nearDest = Physics2D.OverlapCircleAll (GetComponent<Transform>().position, interactRange);
