@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Main.unity
+=======
+- path: Assets/BedRoom.unity
+>>>>>>> 5a368a58ce252e6ba8ab9720fb45e0b7f13a6f8b
   isLoaded: 1
   isActive: 1
