@@ -248,7 +248,8 @@ MonoBehaviour:
   eventID: 7
   useTime: 0
   hideGuy: 0
-  eventAudio: {fileID: 0}
+  eventAudio:
+  - {fileID: 0}
 --- !u!61 &239707418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -411,7 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d0fe4eb70f3634db2fa2445c3d7ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorRange: 0.3
   transition: Living Room
 --- !u!61 &597039309
 BoxCollider2D:
@@ -468,6 +468,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 627208017}
   - 212: {fileID: 627208016}
+  - 61: {fileID: 627208018}
   m_Layer: 0
   m_Name: kitchenSInk
   m_TagString: Untagged
@@ -517,6 +518,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!61 &627208018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627208015}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.28111267}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.43777466}
 --- !u!1 &697999710
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +691,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1352476972}
   - 212: {fileID: 1352476971}
+  - 61: {fileID: 1352476973}
   m_Layer: 0
   m_Name: coffeeFull2
   m_TagString: Event
@@ -725,6 +741,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!61 &1352476973
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352476970}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.01972735, y: -0.24659002}
+  serializedVersion: 2
+  m_Size: {x: 0.96054566, y: 0.50681996}
 --- !u!1 &1357591596
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +881,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1672776570}
   - 212: {fileID: 1672776569}
+  - 61: {fileID: 1672776571}
   m_Layer: 0
   m_Name: kitchenTable
   m_TagString: Untagged
@@ -900,6 +931,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!61 &1672776571
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672776568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.24659005, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.5068199, y: 1}
 --- !u!1 &1890778670
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,7 +991,8 @@ MonoBehaviour:
   eventID: 6
   useTime: 0
   hideGuy: 0
-  eventAudio: {fileID: 0}
+  eventAudio:
+  - {fileID: 0}
 --- !u!61 &1890778673
 BoxCollider2D:
   m_ObjectHideFlags: 0
