@@ -214,6 +214,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
+      propertyPath: m_Offset.x
+      value: -0.012089968
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
+      propertyPath: m_Offset.y
+      value: -0.15750694
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
+      propertyPath: m_Size.x
+      value: 0.3029884
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119842, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
+      propertyPath: m_Size.y
+      value: 0.5073068
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5879c9b47c2d9a4ea74c56ece6a7107, type: 2}
   m_IsPrefabParent: 0
@@ -421,8 +437,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 489462640}
   - 212: {fileID: 489462643}
-  - 61: {fileID: 489462642}
   - 114: {fileID: 489462641}
+  - 61: {fileID: 489462642}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Event
@@ -437,7 +453,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489462639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94, y: 1.29, z: 0}
+  m_LocalPosition: {x: 3.06, y: 1.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1833776978}
@@ -458,11 +474,11 @@ MonoBehaviour:
   eventID: 4
   useTime: 0
   hideGuy: 0
+  eventAudio: {fileID: 0}
 --- !u!61 &489462642
 BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6131584, guid: 6b737676dfc8bd145b937c0623df5bf3,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489462639}
   m_Enabled: 1
@@ -470,9 +486,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.06674924, y: 0.0070837736}
+  m_Offset: {x: 0.22075772, y: -0.00000011920929}
   serializedVersion: 2
-  m_Size: {x: 0.17283118, y: 0.24572675}
+  m_Size: {x: 0.47820985, y: 0.67889786}
 --- !u!212 &489462643
 SpriteRenderer:
   m_ObjectHideFlags: 0
