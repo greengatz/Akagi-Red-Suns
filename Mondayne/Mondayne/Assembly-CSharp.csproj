@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AlarmClock.cs" />
+     <Compile Include="Assets\DayStatus.cs" />
+     <Compile Include="Assets\Event.cs" />
      <Compile Include="Assets\PlayerControl.cs" />
      <Compile Include="Assets\PlayerController.cs" />
  <Reference Include="UnityEngine.UI">
