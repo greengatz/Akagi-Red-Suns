@@ -3,6 +3,9 @@ using System.Collections;
 
 public class AlarmClock : MonoBehaviour {
 
+	private bool running = false;
+	private bool completed = false;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -14,6 +17,18 @@ public class AlarmClock : MonoBehaviour {
 	}
 
 	void selected() {
-		Debug.Log ("clock used");
+		if(running) {
+			Debug.Log ("clock used");
+			running = false;
+			completed = true;
+		}
+	}
+
+	void startEvent() {
+		running = true;
+	}
+
+	bool isCompleted() {
+		return completed;
 	}
 }
