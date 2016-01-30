@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    public float interactRange = 1.0f;
+	private BoxCollider2D bc2d;
+    public float interactRange = 0.1f;
     public Animator animator;
 
     // Use this for initialization
@@ -12,6 +13,9 @@ public class PlayerController : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+		bc2d = GetComponent<BoxCollider2D> ();
+		bc2d.offset = new Vector2 (-0.008f, -0.2f);
+		bc2d.size = new Vector2 (0.155f, 0.4f);
     }
 
     // Update is called once per frame
