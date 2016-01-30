@@ -507,11 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d0fe4eb70f3634db2fa2445c3d7ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   doorRange: 0.1
-=======
-  doorRange: 0.3
->>>>>>> origin/master
   transition: BathRoom
 --- !u!1 &1045830220
 GameObject:
