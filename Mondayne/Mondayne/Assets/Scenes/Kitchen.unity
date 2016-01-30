@@ -85,6 +85,92 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &17052921
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475696, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22363574, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 47249814}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c7b903ae6bd62194db7709a561fff482, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &47249810
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,9 +348,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.0015363693, y: 0.012698929}
+  m_Offset: {x: 0.021615148, y: 0.01269877}
   serializedVersion: 2
-  m_Size: {x: 0.15276578, y: 0.25695705}
+  m_Size: {x: 0.46064037, y: 0.63175964}
 --- !u!212 &239707419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -327,7 +413,7 @@ Transform:
   - {fileID: 239707416}
   - {fileID: 1890778671}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1001 &464841381
 Prefab:
   m_ObjectHideFlags: 0
@@ -517,7 +603,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!61 &627208018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -692,6 +778,7 @@ GameObject:
   - 4: {fileID: 1352476972}
   - 212: {fileID: 1352476971}
   - 61: {fileID: 1352476973}
+  - 114: {fileID: 1352476974}
   m_Layer: 0
   m_Name: coffeeFull2
   m_TagString: Event
@@ -740,7 +827,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!61 &1352476973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -755,6 +842,22 @@ BoxCollider2D:
   m_Offset: {x: -0.01972735, y: -0.24659002}
   serializedVersion: 2
   m_Size: {x: 0.96054566, y: 0.50681996}
+--- !u!114 &1352476974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352476970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptor: event descriptor
+  eventID: 5
+  useTime: 0
+  hideGuy: 0
+  eventAudio: []
 --- !u!1 &1357591596
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +1033,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!61 &1672776571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1005,9 +1108,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.0027905107, y: 0.0032931566}
+  m_Offset: {x: 0.0027905703, y: 0.009986281}
   serializedVersion: 2
-  m_Size: {x: 0.14273289, y: 0.25319457}
+  m_Size: {x: 0.41045028, y: 0.7752423}
 --- !u!212 &1890778674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1230,4 +1333,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
