@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsMoving", false);
         }
 
-        Debug.Log(moveVertical + " " + moveHorizontal);
+        //Debug.Log(moveVertical + " " + moveHorizontal);
 
 
         // check for nearby objects
@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
             if (!gameObject.Equals(nearDest[i].gameObject))
             {
                 bool select = Input.GetButtonDown("Jump");
+				//Debug.Log ("near object " + nearDest [i].gameObject.name);
                 if (select)
                 {
                     //Debug.Log ("using object " + nearDest [i].gameObject.name);
