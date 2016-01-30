@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 0.01f;
     private Rigidbody2D rb2d;
-    public float interactRange = 10.0f;
+    public float interactRange = 1.0f;
     public Animator animator;
 
     // Use this for initialization
@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        rb2d.MovePosition(rb2d.position + movement * Time.fixedDeltaTime * speed);
+		movement.Normalize ();
+		rb2d.MovePosition(rb2d.position + movement * Time.fixedDeltaTime * speed);
 
 
         if (moveHorizontal != 0)
@@ -49,12 +50,16 @@ public class PlayerController : MonoBehaviour
         Collider2D[] nearDest = Physics2D.OverlapCircleAll(GetComponent<Transform>().position, interactRange);
         for (int i = 0; i < nearDest.Length; i++)
         {
-            if (!gameObject.Equals(nearDest[i].gameObject))
-            {
-                bool select = Input.GetButtonDown("Jump");
-				//Debug.Log ("near object " + nearDest [i].gameObject.name);
-                if (select)
-                {
+			bool select = Input.GetButtonDown("Jump");
+			Collider2D near = nearDest [i];
+			if (select && !gameObject.Equals(near.gameObject) && 
+					near.gameObject.CompareTag("Event"))
+			{
+				if (!gameObject.Equals(nearDest[i].gameObject))
+            	{
+                
+					//Debug.Log ("near object " + nearDest [i].gameObject.name);
+
                     //Debug.Log ("using object " + nearDest [i].gameObject.name);
                     //nearDest [i].gameObject.name;
                     nearDest[i].gameObject.SendMessage("selected");

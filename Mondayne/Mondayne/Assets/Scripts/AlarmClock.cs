@@ -18,4 +18,5 @@ public class AlarmClock : Event {
 			finishEvent ();
 		}
 	}
+		
 }
