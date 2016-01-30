@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	public float speed = 0.01f;
+	public float speed = 10;
 	private Rigidbody2D rb2d;
 	public float interactRange = 10.0f;
 
@@ -18,9 +18,7 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxisRaw ("Vertical");
 
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
-		movement *= speed;
-		rb2d.MovePosition (rb2d.position + movement);
-
+		rb2d.MovePosition (rb2d.position + movement * Time.fixedDeltaTime * speed);
 
 		// check for nearby objects
 		Collider2D[] nearDest = Physics2D.OverlapCircleAll (GetComponent<Transform>().position, interactRange);
