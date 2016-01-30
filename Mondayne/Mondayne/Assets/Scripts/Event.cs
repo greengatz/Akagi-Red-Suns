@@ -41,31 +41,33 @@ public class Event : MonoBehaviour {
 		completed = true;
 	}
 
-	void selected() {
-		if(isRunning()) {
-			float toWait = useTime;
-
-			Debug.Log ("starting wait");
-			while (toWait > 0) {
-				toWait -= Time.deltaTime;
-			}
-			Debug.Log ("ending wait");
-
-			// get the guy, hide him if we should
-
-			// start animation or whatever
-			// play start sound
-
-			// wait for time amount
-			// play Loop sound
-			// kill animation or whatever
-			// stop loop sound
-
-			// play end sound
-			// make guy visible again
-
-
-			finishEvent ();
+	public void selected() {
+		//Debug.Log ("selected");
+		if (isRunning ()) {
+			Debug.Log ("selected");
+			StartCoroutine (waitSelected ());
 		}
+	}
+
+	IEnumerator waitSelected() {
+		// get the guy, hide him if we should
+
+		// start animation or whatever
+		// play start sound
+
+		// wait for time amount
+		Debug.Log ("starting wait");
+		yield return new WaitForSeconds(useTime);
+		Debug.Log ("ending wait");
+
+		// play Loop sound
+		// kill animation or whatever
+		// stop loop sound
+
+		// play end sound
+		// make guy visible again
+
+
+		finishEvent ();
 	}
 }
