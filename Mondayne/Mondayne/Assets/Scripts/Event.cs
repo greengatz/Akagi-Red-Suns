@@ -11,7 +11,15 @@ public class Event : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
+		if (GlobalState.events.ContainsKey(eventID)) {
+			GlobalState.events.Remove(eventID);
+		}
+
 		GlobalState.events.Add (eventID, this);
+
+		if (GlobalState.current > eventID) {
+			completed = true;
+		}
 	}
 
 	public void startEvent() {
