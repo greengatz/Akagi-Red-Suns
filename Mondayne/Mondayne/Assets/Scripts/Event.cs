@@ -105,6 +105,13 @@ public class Event : MonoBehaviour
             Sprite isInShower = Resources.Load("BathtubClosedCurtain", typeof(Sprite)) as Sprite;
 
             objectSprite.sprite = isInShower;
+
+            GameObject[] children = GameObject.FindGameObjectsWithTag("Child");
+
+            for(int i = 0; i < children.Length; i++)
+            {
+                Destroy(children[i]);
+            }
         }
         else if (eventID == 4)
         {
