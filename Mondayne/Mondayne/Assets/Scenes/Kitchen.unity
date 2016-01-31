@@ -934,10 +934,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   descriptor:
-  - Drink Your Coffee
-  - Drink Your Coffee
-  - Drink Your Coffee
-  - Drink Your Coffee
+  - Make coffee
+  - Make coffee
+  - Make coffee
+  - Make coffee
   eventID: 5
   useTime: 0
   hideGuy: 0
