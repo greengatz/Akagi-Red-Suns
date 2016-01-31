@@ -1089,7 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startIteration: 4
   stopIteration: 5
-  duration: 3
+  duration: 1
 --- !u!114 &1139480460
 MonoBehaviour:
   m_ObjectHideFlags: 0
