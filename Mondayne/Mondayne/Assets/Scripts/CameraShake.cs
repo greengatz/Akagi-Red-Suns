@@ -32,10 +32,10 @@ public class CameraShake : MonoBehaviour {
 	}
 		
 
-	public void Shake(float amount) {
+	public void Shake() {
 		if (this.shake <= 0.0f) {
 			this.cameraPos = this.camera.transform.position;
 		}
-		this.shake = amount;
+		this.shake = shakeAmount;
 	}
 }
