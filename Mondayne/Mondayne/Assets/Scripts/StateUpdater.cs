@@ -7,11 +7,14 @@ public class StateUpdater : MonoBehaviour {
 
 	public AudioSource music1 = null;
 	public AudioSource music2 = null;
+	public int startingRun = 0;
 	public int switchMusicOn = 2;
 
 	// Use this for initialization
 	void Start () {
 		GlobalState.switchMusic = switchMusicOn;
+
+		GlobalState.run = Mathf.Max (startingRun, GlobalState.run);
 
 		//GlobalState.testMethod ();
 		if (GlobalState.music1 == null && music1 != null) {
