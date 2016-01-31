@@ -7,7 +7,7 @@ public class StateUpdater : MonoBehaviour {
 
 	public AudioSource music1 = null;
 	public AudioSource music2 = null;
-	public int switchMusicOn = 1;
+	public int switchMusicOn = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -33,11 +33,11 @@ public class StateUpdater : MonoBehaviour {
 
 			if (gotEvent) {
 				if (!running.isRunning () && !running.isCompleted ()) {
-					Debug.Log ("Starting event: " + running.descriptor);
+					Debug.Log ("Starting event: " + running.descriptor[Mathf.Min(GlobalState.run, running.descriptor.Length - 1)]);
 					running.startEvent ();
-					GlobalState.toDisplay = running.descriptor;
+					GlobalState.toDisplay = running.descriptor[Mathf.Min(GlobalState.run, running.descriptor.Length - 1)];
 				} else if (!running.isRunning () && running.isCompleted ()) {
-					Debug.Log ("Event finished, moving to next event");
+					Debug.Log ("Event finished, moving to next event, event " + (GlobalState.current+1));
 					GlobalState.current++;
 					GlobalState.toDisplay = unknownTask;
 				}
@@ -45,9 +45,5 @@ public class StateUpdater : MonoBehaviour {
 		} else {
 			// next event is in another room
 		}
-	}
-
-	void resetDay() {
-		GlobalState.current = 0;
 	}
 }

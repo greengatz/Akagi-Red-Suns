@@ -4,7 +4,9 @@ using System.Collections;
 public class Event : MonoBehaviour
 {
 
-    public string descriptor = "event descriptor";
+    //public string descriptor = "event descriptor";
+	public string[] descriptor;
+
     public int eventID;
     public float useTime = 1f;
     public bool hideGuy = false;
