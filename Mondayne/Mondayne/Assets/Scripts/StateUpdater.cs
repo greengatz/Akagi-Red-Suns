@@ -40,10 +40,9 @@ public class StateUpdater : MonoBehaviour {
 					Debug.Log ("Event finished, moving to next event, event " + (GlobalState.current+1));
 					GlobalState.current++;
 					GlobalState.toDisplay = unknownTask;
+					Update ();
 				}
 			}
-		} else {
-			// next event is in another room
 		}
 	}
 }
