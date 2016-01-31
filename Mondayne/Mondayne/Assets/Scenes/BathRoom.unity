@@ -170,11 +170,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22449084, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -780
       objectReference: {fileID: 0}
     - target: {fileID: 22449084, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -161.15598
       objectReference: {fileID: 0}
     - target: {fileID: 22449084, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -186,7 +186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_AnchorMax.x
@@ -194,7 +194,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_SizeDelta.x
@@ -202,15 +202,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 6.9675446
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 22404732, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -13.483772
       objectReference: {fileID: 0}
     - target: {fileID: 156188, guid: 66dbfe4ca5add664a8123d99e3dbef24, type: 2}
       propertyPath: m_Name
@@ -268,7 +268,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
