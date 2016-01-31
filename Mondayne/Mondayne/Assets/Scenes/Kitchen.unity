@@ -419,6 +419,7 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+  fridge: {fileID: 0}
 --- !u!61 &239707418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1022,6 +1023,7 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+  fridge: {fileID: 0}
 --- !u!114 &1352476975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,10 +1350,11 @@ MonoBehaviour:
   - Grab Eggs to Cook
   - Grab Eggs to Cook
   eventID: 6
-  useTime: 0
+  useTime: 1
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+  fridge: {fileID: 0}
 --- !u!61 &1890778673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1394,7 +1397,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 6dfb8225500670e48be324daf68e0c6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fcf469adfaa9b741bd68690997673dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
