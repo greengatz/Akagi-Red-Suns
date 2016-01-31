@@ -89,11 +89,6 @@ public class Event : MonoBehaviour
             AudioSource tempAudio = FindObjectOfType<AudioSource>();
             tempAudio.mute = true;
         }
-        else if (eventID == 1)
-        {
-            AudioSource tempAudio = FindObjectOfType<AudioSource>();
-            tempAudio.Play();
-        }
         else if (eventID == 5)
         {
             Sprite coffeeFull = Resources.Load("coffeeFull2", typeof(Sprite)) as Sprite;
