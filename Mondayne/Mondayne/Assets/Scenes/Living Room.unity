@@ -1052,11 +1052,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489462639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 2.24, y: 1.4, z: 0}
-=======
   m_LocalPosition: {x: 2.68, y: 1.14, z: 0}
->>>>>>> origin/master
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1833776978}
@@ -1076,15 +1072,9 @@ MonoBehaviour:
   descriptor:
   - Feed Your Dog
   - Feed Your Dog
-<<<<<<< HEAD
-  - Feed Your Dog
-  - Feed Your Dog
-  eventID: 0
-=======
   - Feed Your Tasty Dog
   - Feed That Nice Looking Dog
   eventID: 4
->>>>>>> origin/master
   useTime: 0
   hideGuy: 0
   eventAudio: {fileID: 0}
