@@ -408,8 +408,8 @@ MonoBehaviour:
   descriptor:
   - Cook Your Eggs for Breakfast
   - Cook Your Eggs for Breakfast
-  - Cook Your Eggs for Breakfast
-  - Cook Your Eggs for Breakfast
+  - Make those eggs
+  - Make some eggs, maybe eat them one of these days
   eventID: 7
   useTime: 0
   hideGuy: 0
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   descriptor:
   - Make coffee
   - Make coffee
-  - Make coffee
+  - Make deflicious coffee
   - Make coffee
   eventID: 5
   useTime: 0
@@ -1341,8 +1341,8 @@ MonoBehaviour:
   descriptor:
   - Grab Eggs to Cook
   - Grab Eggs to Cook
-  - Grab Eggs to Cook
-  - Grab Eggs to Cook
+  - Get some eggs
+  - Get eggs, who is stocking this fridge?
   eventID: 6
   useTime: 0
   hideGuy: 0
