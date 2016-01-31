@@ -6,6 +6,8 @@ public class ExitScript : MonoBehaviour {
 
 	public float doorRange = 0.3f;
 	public string transition = "next scene";
+	public int lastRun = 5;
+	public string endTrans = "Outro";
 
 	// Use this for initialization
 	void Start () {
@@ -39,7 +41,13 @@ public class ExitScript : MonoBehaviour {
 					GlobalState.music2.Play ();
 				}
 
-				SceneManager.LoadScene (transition);
+				if (GlobalState.run != lastRun) {
+					SceneManager.LoadScene (transition);
+				} else {
+					GlobalState.music1.Stop ();
+					GlobalState.music2.Stop ();
+					SceneManager.LoadScene (endTrans);
+				}
 			}
 		}
 	}

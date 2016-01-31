@@ -287,6 +287,7 @@ MonoBehaviour:
   theText: {fileID: 1513098727}
   textFile: {fileID: 4900000, guid: e2ac2bd877ad09e44bd68a2e35dcb9fb, type: 3}
   textLines: []
+  next: Outro2
   currentLine: 0
   endAtLine: 0
 --- !u!1 &1513098725
