@@ -841,6 +841,7 @@ GameObject:
   - 212: {fileID: 1352476971}
   - 61: {fileID: 1352476973}
   - 114: {fileID: 1352476974}
+  - 114: {fileID: 1352476975}
   m_Layer: 0
   m_Name: coffeeFull2
   m_TagString: Event
@@ -874,7 +875,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31b7a584523f2304db80df37240a1428, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -925,6 +926,20 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+--- !u!114 &1352476975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352476970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edcb8bc340390e448798e663bb01345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: d8e862b572b90df4e80a1a87f56404a7, type: 3}
+  sprite2: {fileID: 21300000, guid: 31b7a584523f2304db80df37240a1428, type: 3}
+  eventID: 5
 --- !u!1 &1357591596
 GameObject:
   m_ObjectHideFlags: 0
