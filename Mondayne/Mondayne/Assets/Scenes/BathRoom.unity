@@ -1093,7 +1093,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor: Go Wash Your Hands and Brush Your Teeth
+  descriptor:
+  - Brush Your Teeth
+  - Brush Your Teeth
+  - Brush Your Teeth
+  - Brush Your Teeth
   eventID: 3
   useTime: 0
   hideGuy: 0
@@ -1305,7 +1309,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor: Use Toilet
+  descriptor:
+  - Use the toilet
+  - Use the toilet
+  - Use the toilet
+  - Use the toilet
   eventID: 1
   useTime: 0
   hideGuy: 0
@@ -1475,7 +1483,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor: You should take a shower
+  descriptor:
+  - Take a Shower
+  - Take a Shower
+  - Take a Shower
+  - Take a Shower
   eventID: 2
   useTime: 6
   hideGuy: 1

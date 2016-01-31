@@ -937,7 +937,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor: Feed Dog
+  descriptor:
+  - Feed Your Dog
+  - Feed Your Dog
+  - Feed Your Dog
+  - Feed Your Dog
   eventID: 4
   useTime: 0
   hideGuy: 0
