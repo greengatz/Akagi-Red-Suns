@@ -1020,6 +1020,7 @@ GameObject:
   - 212: {fileID: 762551468}
   - 114: {fileID: 762551471}
   - 61: {fileID: 762551470}
+  - 95: {fileID: 762551472}
   m_Layer: 0
   m_Name: bathroomSink
   m_TagString: Event
@@ -1104,6 +1105,23 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+--- !u!95 &762551472
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762551467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58dcd289a8c77f048899faa2f8c66f06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &823625598
 GameObject:
   m_ObjectHideFlags: 0

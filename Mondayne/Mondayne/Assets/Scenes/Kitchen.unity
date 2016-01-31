@@ -387,7 +387,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 239707415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.522, y: 1.59, z: 0}
+  m_LocalPosition: {x: 2.64, y: 1.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 424245938}
@@ -414,6 +414,7 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+  fridge: {fileID: 0}
 --- !u!61 &239707418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -943,6 +944,7 @@ MonoBehaviour:
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+  fridge: {fileID: 0}
 --- !u!114 &1352476975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,6 +1160,7 @@ GameObject:
   - 212: {fileID: 1890778674}
   - 61: {fileID: 1890778673}
   - 114: {fileID: 1890778672}
+  - 95: {fileID: 1890778675}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: Event
@@ -1172,7 +1175,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1890778670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.015, y: 1.531, z: 0}
+  m_LocalPosition: {x: 2.12, y: 1.531, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 424245938}
@@ -1195,10 +1198,11 @@ MonoBehaviour:
   - Grab Eggs to Cook
   - Grab Eggs to Cook
   eventID: 6
-  useTime: 0
+  useTime: 2
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+  fridge: {fileID: 0}
 --- !u!61 &1890778673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1241,10 +1245,27 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 6dfb8225500670e48be324daf68e0c6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fcf469adfaa9b741bd68690997673dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!95 &1890778675
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890778670}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1badb05be1174a144bd21bf0a1d7d8bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1905082637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1409,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2113485283}
   - 212: {fileID: 2113485282}
+  - 61: {fileID: 2113485284}
   m_Layer: 0
   m_Name: kitchenTable (1)
   m_TagString: Untagged
@@ -1437,3 +1459,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!61 &2113485284
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113485281}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.24945125, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.50109744, y: 1}

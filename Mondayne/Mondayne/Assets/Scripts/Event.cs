@@ -12,7 +12,7 @@ public class Event : MonoBehaviour
     public bool hideGuy = false;
     public AudioSource eventAudio = null;
     public SpriteRenderer objectSprite;
-
+    public Animator fridge;
     private bool running = false;
     private bool completed = false;
 
@@ -33,6 +33,7 @@ public class Event : MonoBehaviour
 
         eventAudio = GetComponent<AudioSource>();
         objectSprite = GetComponent<SpriteRenderer>();
+        fridge = GetComponent<Animator>();
     }
 
     public void startEvent()
@@ -99,12 +100,22 @@ public class Event : MonoBehaviour
             Sprite coffeeFull = Resources.Load("coffeeFull2", typeof(Sprite)) as Sprite;
             objectSprite.sprite = coffeeFull;
         }
-
-        if (eventID == 2)
+        else if (eventID == 6)
+        {
+            Sprite fridgeOpen = Resources.Load("RefrigeratorOpen", typeof(Sprite)) as Sprite;
+            objectSprite.sprite = fridgeOpen;
+            
+        }
+        else if (eventID == 2)
         {
             Sprite isInShower = Resources.Load("BathtubClosedCurtain", typeof(Sprite)) as Sprite;
 
             objectSprite.sprite = isInShower;
+        }
+        else if (eventID == 4)
+        {
+            Sprite dogFood = Resources.Load("dogBowlFull", typeof(Sprite)) as Sprite;
+            objectSprite.sprite = dogFood;
         }
 
         GlobalState.characterActing = true;
@@ -119,7 +130,11 @@ public class Event : MonoBehaviour
             Sprite isNotInShower = Resources.Load("BathtubOpenCurtain", typeof(Sprite)) as Sprite;
             objectSprite.sprite = isNotInShower;
         }
-
+        else if (eventID == 6)
+        {
+            Sprite fridgeClose = Resources.Load("Refrigerator", typeof(Sprite)) as Sprite;
+            objectSprite.sprite = fridgeClose;
+        }
 
         GlobalState.characterActing = false;
         GlobalState.characterVis = true;
