@@ -11,6 +11,8 @@ public class TextBoxManager : MonoBehaviour
     public TextAsset textFile;
     public string[] textLines;
 
+	public string next = "Main";
+
     public int currentLine;
     public int endAtLine;
 
@@ -32,7 +34,7 @@ public class TextBoxManager : MonoBehaviour
     {
         if(currentLine > endAtLine)
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene(next);
         }
         theText.text = textLines[currentLine];
 
