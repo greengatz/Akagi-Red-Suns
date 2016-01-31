@@ -86,8 +86,7 @@ public class Event : MonoBehaviour
 
         if (eventID == 0)
         {
-            AudioSource tempAudio = FindObjectOfType<AudioSource>();
-            tempAudio.mute = true;
+            eventAudio.mute = true;
         }
         else if (eventID == 5)
         {
