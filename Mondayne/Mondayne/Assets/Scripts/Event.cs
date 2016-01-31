@@ -87,13 +87,7 @@ public class Event : MonoBehaviour
 
         if (eventID == 0)
         {
-            AudioSource tempAudio = FindObjectOfType<AudioSource>();
-            tempAudio.mute = true;
-        }
-        else if (eventID == 1)
-        {
-            AudioSource tempAudio = FindObjectOfType<AudioSource>();
-            tempAudio.Play();
+            eventAudio.mute = true;
         }
         else if (eventID == 5)
         {
