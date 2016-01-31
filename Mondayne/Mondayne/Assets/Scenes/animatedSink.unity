@@ -467,7 +467,6 @@ Transform:
   - {fileID: 931231352}
   - {fileID: 1497919430}
   - {fileID: 1011084538}
-  - {fileID: 762551469}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!1 &110163945
@@ -1020,6 +1019,7 @@ GameObject:
   - 212: {fileID: 762551468}
   - 114: {fileID: 762551471}
   - 61: {fileID: 762551470}
+  - 95: {fileID: 762551472}
   m_Layer: 0
   m_Name: bathroomSink
   m_TagString: Event
@@ -1064,11 +1064,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 762551467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.739925, y: -2.428374, z: 0}
+  m_LocalPosition: {x: 2.2929006, y: -2.1579704, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 84103471}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!61 &762551470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1094,16 +1094,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor:
-  - Brush Your Teeth
-  - Brush Your Teeth
-  - Brush Your Teeth
-  - Brush Your Teeth
+  descriptor: Go Wash Your Hands and Brush Your Teeth
   eventID: 3
   useTime: 0
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+--- !u!95 &762551472
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762551467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58dcd289a8c77f048899faa2f8c66f06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &823625598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1291,6 @@ GameObject:
   - 4: {fileID: 931231352}
   - 212: {fileID: 931231355}
   - 61: {fileID: 931231354}
-  - 82: {fileID: 931231356}
   - 114: {fileID: 931231353}
   m_Layer: 0
   m_Name: Toilet
@@ -1311,15 +1323,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor:
-  - Use the toilet
-  - Use the toilet
-  - Use the toilet
-  - Use the toilet
+  descriptor: Use Toilet
   eventID: 1
   useTime: 0
   hideGuy: 0
-  eventAudio: {fileID: 931231356}
+  eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
 --- !u!61 &931231354
 BoxCollider2D:
@@ -1367,80 +1375,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!82 &931231356
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 931231351}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4bf6ebb3384d6d541b9b1c86ae176ad3, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.75
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!1 &983440387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,11 +1493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor:
-  - Take a Shower
-  - Take a Shower
-  - Take a Shower
-  - Take a Shower
+  descriptor: You should take a shower
   eventID: 2
   useTime: 6
   hideGuy: 1
@@ -1626,7 +1556,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f200b698d4ab57941ac5cbc256496aec, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
