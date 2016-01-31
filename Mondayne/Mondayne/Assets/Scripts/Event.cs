@@ -82,6 +82,12 @@ public class Event : MonoBehaviour
             eventAudio.Play();
         }
 
+        if (eventID == 0)
+        {
+            AudioSource tempAudio = FindObjectOfType<AudioSource>();
+            tempAudio.mute = true;
+        }
+
         if (eventID == 2)
         {
             Sprite isInShower = Resources.Load("BathtubClosedCurtain", typeof(Sprite)) as Sprite;
