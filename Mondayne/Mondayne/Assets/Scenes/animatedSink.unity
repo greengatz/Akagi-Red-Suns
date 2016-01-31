@@ -468,7 +468,7 @@ Transform:
   - {fileID: 1497919430}
   - {fileID: 1011084538}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &110163945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1019,7 @@ GameObject:
   - 212: {fileID: 762551468}
   - 114: {fileID: 762551471}
   - 61: {fileID: 762551470}
+  - 95: {fileID: 762551472}
   m_Layer: 0
   m_Name: bathroomSink
   m_TagString: Event
@@ -1067,7 +1068,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!61 &762551470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1093,16 +1094,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor:
-  - Brush Your Teeth
-  - Brush Your Teeth
-  - Brush Your Teeth
-  - Brush Your Teeth
+  descriptor: Go Wash Your Hands and Brush Your Teeth
   eventID: 3
   useTime: 0
   hideGuy: 0
   eventAudio: {fileID: 0}
   objectSprite: {fileID: 0}
+--- !u!95 &762551472
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762551467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58dcd289a8c77f048899faa2f8c66f06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &823625598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,65 +1148,6 @@ Transform:
   - {fileID: 895489720}
   m_Father: {fileID: 84103471}
   m_RootOrder: 1
---- !u!1001 &893503666
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.6941533
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.2398193
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467408, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: makeVisible
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467408, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: makeInvisible
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 21280644, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: eb2666c7e95eddf4aa0e52a7cb24a61e,
-        type: 3}
-    - target: {fileID: 123110, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_Name
-      value: Child (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &895489719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,11 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor:
-  - Use the toilet
-  - Use the toilet
-  - Use the toilet
-  - Use the toilet
+  descriptor: Use Toilet
   eventID: 1
   useTime: 0
   hideGuy: 0
@@ -1542,11 +1493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d54d6710a55e6488061c16bc46e89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptor:
-  - Take a Shower
-  - Take a Shower
-  - Take a Shower
-  - Take a Shower
+  descriptor: You should take a shower
   eventID: 2
   useTime: 6
   hideGuy: 1
@@ -1609,7 +1556,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f200b698d4ab57941ac5cbc256496aec, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2202,65 +2149,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1777407162
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.7100639
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.2239082
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 123110, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_Name
-      value: Child (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467408, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: makeVisible
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467408, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: makeInvisible
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 21280644, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 337cefe41d05ff44684d54baf241991f,
-        type: 3}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 624f0cc9e9ac8fa4aae649375d1056a8, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1873035270
 GameObject:
   m_ObjectHideFlags: 0
